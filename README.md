@@ -23,4 +23,5 @@ python sample_point_cloud.py data/cube.ply
 ```
 
 ## Results
-ToDo
+![Output for cube](output_cube.png)
+Input point cloud in black color, filtered point cloud in red color.

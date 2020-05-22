@@ -2,6 +2,23 @@ import numpy as np
 import open3d as o3d
 import argparse
 from build import graph_filter
+import os
+
+def get_vis():
+    vis = o3d.visualization.Visualizer()
+    cwd = os.getcwd()  # to handle issue on OS X
+    vis.create_window()
+    os.chdir(cwd)  # to handle issue on OS X
+    return vis
+
+def draw(geometries):
+    vis = get_vis()
+    if not isinstance(geometries, list):
+        geometries = [geometries]
+    for geometry in geometries:
+        vis.add_geometry(geometry)
+    vis.run()
+    vis.destroy_window()
 
 
 def read_data(path):
@@ -42,4 +59,4 @@ if __name__ == "__main__":
         o3d.utility.Vector3dVector(points_sampled))
     pcd_sampled.paint_uniform_color([1, 0, 0])  # sampled points are red
 
-    o3d.visualization.draw_geometries([pcd_orig, pcd_sampled])
+    draw([pcd_orig.translate([-70, 0, 0]), pcd_sampled])
