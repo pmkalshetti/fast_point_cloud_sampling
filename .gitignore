@@ -1,4 +1,5 @@
 build/*
+data/*
 
 # Desktop service store files
 *.DS_Store
