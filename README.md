@@ -25,4 +25,18 @@ python sample_point_cloud.py data/cube.ply
 ## Results
 #### 1. Cube
 ![Output for cube](output_cube.png)
-*Input point cloud in black color, filtered point cloud in red color*
+**Input point cloud in black color, filtered point cloud in red color*
+
+
+## Reference
+
+@article{chen2017fast,
+  title={Fast resampling of three-dimensional point clouds via graphs},
+  author={Chen, Siheng and Tian, Dong and Feng, Chen and Vetro, Anthony and Kova{\v{c}}evi{\'c}, Jelena},
+  journal={IEEE Transactions on Signal Processing},
+  volume={66},
+  number={3},
+  pages={666--681},
+  year={2017},
+  publisher={IEEE}
+}
