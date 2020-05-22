@@ -13,8 +13,13 @@ The code is implemented in `Python` and `C++`.
 - [OpenMP](https://www.openmp.org/)
 
 ## Usage
+#### Compilation
+```bash
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build/
+```
 ```python
-python sample_point_cloud.py
+python sample_point_cloud.py data/cube.ply
 ```
 
 ## Results
