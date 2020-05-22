@@ -30,13 +30,13 @@ python sample_point_cloud.py data/cube.ply
 
 ## Reference
 
-@article{chen2017fast,
-  title={Fast resampling of three-dimensional point clouds via graphs},
-  author={Chen, Siheng and Tian, Dong and Feng, Chen and Vetro, Anthony and Kova{\v{c}}evi{\'c}, Jelena},
-  journal={IEEE Transactions on Signal Processing},
-  volume={66},
-  number={3},
-  pages={666--681},
-  year={2017},
-  publisher={IEEE}
-}
+    @article{chen2017fast,
+    title={Fast resampling of three-dimensional point clouds via graphs},
+    author={Chen, Siheng and Tian, Dong and Feng, Chen and Vetro, Anthony and Kova{\v{c}}evi{\'c}, Jelena},
+    journal={IEEE Transactions on Signal Processing},
+    volume={66},
+    number={3},
+    pages={666--681},
+    year={2017},
+    publisher={IEEE}
+    }
